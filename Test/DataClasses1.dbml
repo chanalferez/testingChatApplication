@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbTest" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=dbTest;Integrated Security=True" SettingsObjectName="Test.Properties.Settings" SettingsPropertyName="dbTestConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.sp_AddEmp" Method="sp_AddEmp">
+    <Parameter Name="Lname" Parameter="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Fname" Parameter="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Mname" Parameter="mname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Birthdate" Parameter="birthdate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Age" Parameter="age" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_DeleteEmp" Method="sp_DeleteEmp">
+    <Parameter Name="EmpId" Parameter="empId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_UpdateEmp" Method="sp_UpdateEmp">
+    <Parameter Name="EmpId" Parameter="empId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Lname" Parameter="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Fname" Parameter="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Mname" Parameter="mname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Birthdate" Parameter="birthdate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Age" Parameter="age" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
